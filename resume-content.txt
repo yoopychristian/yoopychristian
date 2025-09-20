@@ -1,0 +1,202 @@
+Yoopy Christian
+Jakarta, Indonesia
+
+     yoopychs@gmail.com                                         +62 812 9484 6600
+
+     linkedin.com/in/yoopychristian
+
+Summary
+Yoopy Christian is a Tech Lead at Blue Bird Group, a leading company in transportation and logistics services. He
+graduated with a Bachelor of Engineering in Geological/Geophysical Engineering from Institut Teknologi Sumatera
+in 2019, and decided to pursue his passion for technology as a Software Engineer.
+
+In his role, he manages two squads of developers, coordinates and leads the software development projects, and
+makes crucial technical decisions that affect the architecture, technology, and tools used. He also writes high-
+quality code and conducts peer code reviews to ensure the reliability and security of the software solutions. He
+has worked on client projects for Bank BRI and OVO, creating and integrating APIs using Golang, PostgreSQL,
+and MySQL. He has a unique combination of a Geophysics background and software engineering skills, which
+enables him to approach problem-solving from a fresh perspective. He is dedicated to continuous learning and
+professional growth, and stays updated with the latest technological advancements and industry trends. He values
+collaboration, excellence, and innovation, and aims to make a significant impact in the world of technology.
+
+Experience
+    Technical Lead
+    Blue Bird Group
+    Jan 2023 - Present (1 year 8 months)
+    • Managing 2 squads currently, Bluebird Logistics Corporate & E-timesheet Corporate Solution.
+    Coordinating and leading the team of developers, including task delegation, tracking progress, and
+    providing technical guidance support. Maintaining good communication among team members and
+    ensuring effective collaboration between technical and non-technical teams.
+
+    • Making crucial technical decisions that affect the architecture, technology, and tools used in project
+    development. Ensuring that proposed solutions align with industry standards and best practices.
+
+    • Writing high-quality code and conducting peer code reviews to ensure the quality, reliability, and
+    security of code developed by the team. Identifying and addressing technical issues that arise during
+    development.
+
+    • Participating in project planning and estimating development timelines. Assisting in setting task
+    priorities and devising realistic work plans.
+
+    • Ensuring that the developed products meet high-quality standards. Collaborating with the QA team to
+    plan and execute efficient unit, integration, and system testing.
+
+    • Communicating with project stakeholders, such as management, customers, and end-users, to ensure
+    their requirements and expectations are understood and met. Providing regular progress reports and
+    managing risks and issues that may arise.
+
+
+
+
+                                              Yoopy Christian - page 1
+Back End Engineer
+Sagara Technology
+Jul 2021 - Dec 2022 (1 year 6 months)
+1. Client Bank BRI
+• Working on a client project for the MVP application call Beliin-BRI.
+• Make API with golang GIN framework with middleware, cors and PostgreSQL for database
+• Create Application Beliin – BRI to help UMKM in their business process.
+
+2. Client OVO
+• Working on a client project for integrated Bank Indonesia with the new regulation BISNAP for the new
+API in OVO.
+• Make Open API with Golang monolith with middleware, cors and MySql for database and with HLD
+and LLD for the design
+
+
+Back End Developer
+Lumoshive
+May 2021 - Oct 2021 (6 months)
+• Make Backend using golang
+• Make API with golang GIN framework with middleware, cors and PostgreSQL for database
+• Create Application Game Platform Internal Project
+
+
+Back End Developer
+PT FUSI SOLUSI TRANSFORMASI
+Sep 2020 - Apr 2021 (8 months)
+• Make Backend using golang
+• Make API with golang echo framework with middleware, cors and PostgreSQL for database
+• Create elasticsearch, logstash, kibana ELK to display log visualizations on kibana
+• Create payment gateway SmartStudent apps Lintasarta
+
+
+Trainee
+Enigma Camp
+May 2020 - Aug 2020 (4 months)
+Learn about Golang, MySQL, JavaScript, ReactJS.
+
+
+Geoscientist
+Indogeo Social Enterprise
+Jan 2020 - Apr 2020 (4 months)
+1. Looking for a national journal to get the value of CO2, H2S, HG, in order to know the risks of oil and
+gas development.
+2. Make a map of Indonesia's forests as a source for exploration planning and to avoid overlapping
+
+
+Geostatistics Lab Assistant
+Institut Teknologi Sumatera
+Jan 2019 - May 2019 (5 months)
+
+                                          Yoopy Christian - page 2
+   Become a geophysics laboratory assistant in the geostatistics section, teaching statistics to apply to
+   geophysics. Starting from studying variogram models, simple kriging, ordinary kriging, spatial estimation
+   methods, and spatial estimation co-kriging.
+
+
+   Student Intern
+   PT ANTAM Tbk
+   Nov 2018 - Jan 2019 (3 months)
+   Internship Student
+
+   1. Study geology around the measurement area.
+   2. Knowing the geological structure in the area.
+   3. Processing geophysical data in the form of magnetic data.
+   4. Create a magnetic map that is correlated with the surrounding geology.
+   5. Create a structure using Geosoft Oasis Montaj software and create 3D using inversions
+
+
+   Seismology Lab Assistant
+   Institut Teknologi Sumatera
+   Aug 2018 - Dec 2018 (5 months)
+   Become a geophysics laboratory assistant for earthquake or seismology parts, and study things such
+   as when P waves and S waves arrive. Determination of the speed and distance traveled by waves.
+   Use the excel application, seisgram, seisee. And get earthquake data from BMKG and data from the
+   International Earthquake Agency.
+
+
+   Sedimentology & Stratigraphy Lab Assistant
+   Institut Teknologi Sumatera
+   Aug 2017 - Dec 2017 (5 months)
+   Become a geology laboratory assistant. Able to sedimentology and stratigraphy. studying sedimentary
+   rocks ranging from the formation of sedimentary rocks and also the qualifications of sedimentary rocks.
+   Stratigraphy learns things about history, composition and relative age and distribution of bedding layers
+   and interpretation of rock layers to explain the history of the Earth.
+
+
+Education
+   Institut Teknologi Sumatera
+   Bachelor of Engineering - BE, Geological/Geophysical Engineering
+   2015 - 2019
+
+
+Licenses & Certifications
+   EF SET Certificate - EF English First
+
+
+   Statistical Processing Computer Operator - Badan Nasional Sertifikasi Profesi
+   Issued Oct 2019 - Expires Oct 2022
+   No. Reg. ICT 294 00017318 2019
+
+
+
+                                            Yoopy Christian - page 3
+   Mine Plan Design - CV Bara Indo Consulting
+   No. 205/SER/MP/BIC-GMS/I/2020
+
+
+   Memulai Pemrograman Dengan Python - Dicoding Academy
+   N72ZDGQRLZYW
+
+
+   Python Basic - HackerRank
+   b5306c29dbf8
+
+
+   Automate the Boring Stuff with Python Programming - Udemy
+   UC-2ad7813d-c143-4b3f-a451-cbefeeb77f7d
+
+
+   The Complete Python 3 Course for Beginners (Step by Step) - Udemy
+   UC-b06271bc-ec1d-4d33-a8eb-a8ac5372d978
+
+
+   Learning Python - Farhanas' Brainstation
+   AWbY8JUHV-d4cYULg-qnce7GVld4
+
+
+   Python Data Analysis - Farhanas' Brainstation
+   AezKE6i-js9voW3_5Dc96sQaCsZg
+
+
+   How to Use LinkedIn Learning (2016) - LinkedIn
+
+
+   Enterprise Architecture Foundations - LinkedIn
+
+
+   Creating a Culture of Collaboration - LinkedIn
+
+
+   Prioritizing Your Tasks - LinkedIn
+
+Skills
+Technical Lead • Solution Architecture • Team Management • Amazon Web Services (AWS) • KrakenD
+ • Kong API Gateway • PostgreSQL • Unit Testing • RabbitMQ • New Relic
+
+
+
+
+                                      Yoopy Christian - page 4
+
