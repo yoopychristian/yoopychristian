@@ -1,3 +1,8 @@
+// Initialize EmailJS
+(function(){
+    emailjs.init("your_public_key"); // Replace with your EmailJS public key
+})();
+
 // Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('nav-toggle');
@@ -104,20 +109,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            // Simulate form submission
+            // Send email using EmailJS
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
 
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
 
-            // Simulate API call
-            setTimeout(function() {
-                alert('Thank you for your message! I will get back to you soon.');
-                contactForm.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 1000);
+            // EmailJS configuration
+            const serviceId = 'service_your_service_id'; // Replace with your EmailJS service ID
+            const templateId = 'template_your_template_id'; // Replace with your EmailJS template ID
+            const publicKey = 'your_public_key'; // Replace with your EmailJS public key
+
+            const templateParams = {
+                from_name: name,
+                from_email: email,
+                to_name: 'Yoopy Christian',
+                message: message,
+                reply_to: email
+            };
+
+            // Send email using EmailJS
+            emailjs.send(serviceId, templateId, templateParams, publicKey)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Thank you for your message! I will get back to you soon.');
+                    contactForm.reset();
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Sorry, there was an error sending your message. Please try again or contact me directly.');
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
         });
     }
 });
