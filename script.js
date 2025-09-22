@@ -6,14 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
-
-            // Change hamburger icon to X
-            const icon = navToggle.querySelector('i');
-            if (navMenu.classList.contains('active')) {
-                icon.className = 'fas fa-times';
-            } else {
-                icon.className = 'fas fa-bars';
-            }
+            navToggle.classList.toggle('active');
         });
 
         // Close menu when clicking on nav links
@@ -21,8 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
                 navMenu.classList.remove('active');
-                const icon = navToggle.querySelector('i');
-                icon.className = 'fas fa-bars';
+                navToggle.classList.remove('active');
             });
         });
     }
@@ -58,7 +50,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Intersection Observer for Animations
+// Simple fade-in animation for elements
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -112,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            // Simulate form submission (replace with actual form handling)
+            // Simulate form submission
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
 
@@ -130,130 +122,76 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Add loading animation for skill tags
+// Scroll to top button functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const skillTags = document.querySelectorAll('.skill-tag');
-
-    skillTags.forEach((tag, index) => {
-        tag.style.animationDelay = `${index * 0.1}s`;
-        tag.classList.add('skill-tag-enter');
-    });
-});
-
-// Add CSS for skill tag animation
-const style = document.createElement('style');
-style.textContent = `
-    .skill-tag-enter {
-        animation: skillTagSlideIn 0.5s ease forwards;
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-
-    @keyframes skillTagSlideIn {
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-`;
-document.head.appendChild(style);
-
-// Typing effect for hero title (optional enhancement)
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.innerHTML = '';
-    element.style.borderRight = '2px solid white';
-
-    function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        } else {
-            setTimeout(() => {
-                element.style.borderRight = 'none';
-            }, 1000);
-        }
-    }
-
-    type();
-}
-
-// Apply typing effect to hero title on load
-document.addEventListener('DOMContentLoaded', function() {
-    const heroTitle = document.querySelector('.hero h1');
-    if (heroTitle) {
-        // Only apply typing effect on larger screens to avoid mobile issues
-        if (window.innerWidth > 768) {
-            const originalText = heroTitle.textContent;
-            heroTitle.style.width = 'fit-content';
-            heroTitle.style.margin = '0 auto 1rem auto';
-
-            setTimeout(() => {
-                typeWriter(heroTitle, originalText, 150);
-            }, 500);
-        }
-    }
-});
-
-// Add scroll-to-top functionality
-document.addEventListener('DOMContentLoaded', function() {
-    // Create scroll-to-top button
-    const scrollToTopBtn = document.createElement('button');
-    scrollToTopBtn.innerHTML = '<i class="fas fa-chevron-up"></i>';
-    scrollToTopBtn.className = 'scroll-to-top';
-    scrollToTopBtn.setAttribute('aria-label', 'Scroll to top');
-    document.body.appendChild(scrollToTopBtn);
-
-    // Add CSS for scroll-to-top button
-    const scrollToTopStyle = document.createElement('style');
-    scrollToTopStyle.textContent = `
-        .scroll-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            background: #667eea;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            font-size: 1.2rem;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 1000;
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
-        }
-
-        .scroll-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .scroll-to-top:hover {
-            background: #5a67d8;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
-        }
-    `;
-    document.head.appendChild(scrollToTopStyle);
-
     // Show/hide scroll-to-top button
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 500) {
-            scrollToTopBtn.classList.add('visible');
-        } else {
-            scrollToTopBtn.classList.remove('visible');
-        }
-    });
-
-    // Scroll to top functionality
-    scrollToTopBtn.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    const scrollToTopBtn = document.querySelector('.scroll-to-top');
+    if (scrollToTopBtn) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
         });
-    });
+
+        // Scroll to top functionality
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+
+// Dynamic Experience Duration Calculator
+document.addEventListener('DOMContentLoaded', function() {
+    function calculateExperienceDuration() {
+        const startDate = new Date('2023-01-01');
+        const currentDate = new Date();
+
+        let years = currentDate.getFullYear() - startDate.getFullYear();
+        let months = currentDate.getMonth() - startDate.getMonth();
+
+        // Adjust if current month is before January
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+
+        // Adjust if current date is before the 1st of the month
+        if (currentDate.getDate() < startDate.getDate()) {
+            months--;
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+        }
+
+        // Format the duration string
+        let durationText = '';
+        if (years > 0) {
+            durationText += years + ' year' + (years > 1 ? 's' : '');
+            if (months > 0) {
+                durationText += ' ' + months + ' month' + (months > 1 ? 's' : '');
+            }
+        } else if (months > 0) {
+            durationText += months + ' month' + (months > 1 ? 's' : '');
+        } else {
+            durationText = 'Less than 1 month';
+        }
+
+        // Update the experience duration element
+        const durationElement = document.getElementById('current-experience-duration');
+        if (durationElement) {
+            durationElement.innerHTML = `<i class="fas fa-calendar-alt"></i>Jan 2023 - Present (${durationText})`;
+        }
+    }
+
+    // Calculate duration immediately
+    calculateExperienceDuration();
+
+    // Update every month (approximately every 30 days)
+    setInterval(calculateExperienceDuration, 30 * 24 * 60 * 60 * 1000);
 });
